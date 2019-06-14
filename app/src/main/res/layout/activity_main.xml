@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <ImageView
+            android:scaleType="centerCrop"
+            android:src="@drawable/background_mario"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <FrameLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+
+        </FrameLayout>
+
+        <View
+                android:background="#F4E3B1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+        <!-- 底層功能欄 -->
+        <LinearLayout
+                android:background="#E014325C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <View
+                    android:background="#F4E3B1"
+                    android:layout_width="1dp"
+                    android:layout_height="70dp"/>
+
+            <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"/>
+
+            <!-- mushroom -->
+            <com.ng.nguilib.CentralTractionButton
+                    android:layout_gravity="center"
+                    android:id="@+id/mushroomCentralTractionButton"
+                    android:button="@null"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@android:color/transparent"
+                    app:normalexternalbackground="@drawable/icon_mushroom_body_unselected"
+                    app:normalinsidebackground="@drawable/icon_mushroom_eye_unselected"
+                    app:selectedexternalbackground="@drawable/icon_mushroom_body_selected"
+                    app:selectedinsidebackground="@drawable/icon_mushroom_eye_selected"
+                    app:text="消息"
+                    app:textdimension="12sp"/>
+
+            <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"/>
+
+            <!-- star -->
+            <com.ng.nguilib.CentralTractionButton
+                    android:layout_gravity="center"
+                    android:id="@+id/starCentralTractionButton"
+                    android:button="@null"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@android:color/transparent"
+                    app:normalexternalbackground="@drawable/icon_star_body_unselected"
+                    app:normalinsidebackground="@drawable/icon_star_eye_unselected"
+                    app:selectedexternalbackground="@drawable/icon_star_body_selected"
+                    app:selectedinsidebackground="@drawable/icon_star_eye_selected"
+                    app:text="消息"
+                    app:textdimension="12sp"/>
+
+            <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"/>
+
+            <!-- wing -->
+            <com.ng.nguilib.CentralTractionButton
+                    android:layout_gravity="center"
+                    android:id="@+id/wingCentralTractionButton"
+                    android:button="@null"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@android:color/transparent"
+                    app:normalexternalbackground="@drawable/icon_wing_body_unselected"
+                    app:normalinsidebackground="@drawable/icon_wing_eye_unselected"
+                    app:selectedexternalbackground="@drawable/icon_wing_body_selected"
+                    app:selectedinsidebackground="@drawable/icon_wing_eye_selected"
+                    app:text="消息"
+                    app:textdimension="12sp"/>
+
+            <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"/>
+
+            <View
+                    android:background="#F4E3B1"
+                    android:layout_width="1dp"
+                    android:layout_height="70dp"/>
+        </LinearLayout>
+
+        <View
+                android:background="#F4E3B1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+    </LinearLayout>
+</FrameLayout>
